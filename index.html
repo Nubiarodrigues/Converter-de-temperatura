@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Calculadora de Conversão</title>
+</head>
+<body>
+    
+    <div class="calculadora">
+        <h1>Calculadora de Conversão</h1>
+        <div class="entrada">
+            <input type="number" class="input" id='entrada' name="entrada1">
+        </div>
+    
+        <div class="escolha">
+            <input type="radio" id="celsius" class="escolha1" name="conversao" value="1">
+            <label for="celsius">Celsius p/Fahrenheit</label>
+
+            <input type="radio" id="Fahrenheit" class="escolha1" name="conversao" value="2">
+            <label for="Fahrenheit">Fahrenheit p/Celsius</label>
+
+            <input type="radio" id="Kelvin" class="escolha1" name="conversao" value="3">
+            <label for="Kelvin">Kelvin p/ Fahrenheit</label>
+
+            <input type="radio" id="Fahrenheit/Kelvin" class="escolha1" name="conversao" value="4">
+            <label for="Fahrenheit/Kelvin">Fahrenheit p/ Kelvin</label>
+
+            <input type="radio" id="Celsius/kelvin" class="escolha1" name="conversao" value="5">
+            <label for="Celsius/kelvin">Celsius p/ kelvin</label>
+
+            <input type="radio" id="kelvin/celsius" class="escolha1" name="conversao" value="6">
+            <label for="kelvin/celsius">kelvin p/ celsius</label>
+
+        </div>
+        <br>
+        <br>
+        <div class="botão1">
+            <button onclick="conversao()" type="submit" id="botão">Converter</button>
+        </div>
+
+        <h3 id="resultado"> </h3>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
